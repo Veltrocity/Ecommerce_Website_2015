@@ -1,0 +1,12 @@
+/*902606 0.02*/
+b, strong    {font-weight:bold;}
+blockquote   {margin:1em;}
+dd           {margin:0 0 0 10px;}
+dl           {margin:5px 0;}
+em, i        {font-style:italic;}
+img          {border:0;}
+input        {margin:0;}
+li           {margin:0 0 0 15px; padding:0;}
+ol, ul       {list-style:disc outside; margin:0; padding:0;}
+p            {margin:10px 0; padding:0;}
+tr, td       {vertical-align:top;}

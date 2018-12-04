@@ -1,0 +1,73 @@
+/*092606 0.02*/
+/* Classes */
+.image-l {background-color:#fff; display:block; float:left; margin:0 15px 10px 0;padding:5px;}
+.image-r {background-color:#fff; display:block; float:right; margin:0 0 10px 15px;padding:5px;}
+.image-c {text-align:center; margin-bottom:10px;}
+.inset-l {background-color:#fff; display:block; float:left; margin:0 8px 5px 0;padding:5px;}
+.inset-r {background-color:#fff; display:block; float:right; margin:0 0 5px 8px;padding:5px;}
+
+
+.addtocartImg{
+     border:0;
+     margin:10px 0;
+     padding:0px;
+     cursor:pointer;
+     display:block;
+}
+
+.el #contents {}  
+#contents .vertical td {text-align:center;} /* Used for the "Vertical" RTML Layout */	
+.wrap #contents {}
+
+/* IDs */
+#contents {background-color:#ffffff;border-right:10px solid #ffffff; border-left:10px solid #ffffff}
+
+#contents a{text-decoration:none;}
+#contents a:hover{text-decoration: underline;}
+#contents #contents-table {border-collapse:collapse; border-bottom:10px solid #ffffff}
+	#itemtype #contents table {/*margin:10px 0;*/}
+#contents #contents-table select option, #itemarea select option{padding-right:10px}
+#contents td {background-color:#ffffff; margin:2px; padding:5px;}
+#contents .horizontal-seperator{border-bottom:2px solid #ffffff;}
+#contents .vertical-seperator{border-right:2px solid #ffffff;}
+#contents.accessory * {text-align:left;}
+#contents.accessory .details {background-color:#fff; margin:2px 10px; padding:10px;}
+#contents.accessory .details a {color:#000; font-size:1em;} /* COLOR:LINK, FONTSIZE:NAME */
+#contents.accessory .details h3 {font-size:1em;}
+#contents.accessory .details .sale-price {margin-bottom:10px;}
+
+#contents .detail td {padding:5px; border-bottom:15px solid #E9E9E4;} /* The Border-bottom must be applied to the TD, not the TR in order to work in IE */
+#contents .detail.last td {border-bottom:0 solid;} /* Needed for FF */
+	#itemtype #contents .detail td,
+	#maintype #contents .image td {padding-bottom:10px;}
+#contents .last {border:0;}
+#contents .name {color:#000; font-weight:bold; padding:5px 0 0;}
+#contents .name {padding:5px 0 0;}
+#contents .price {font-weight:normal; margin:10px 0 0;}
+	#itemtype .price em {font-style:normal; font-weight:bold; margin:10px 0; padding:0 4px 0 0;}
+#contents .sale-price {color:#000000;}  
+#contents .sale-price-bold {color:#000000;font-weight:bold;}
+#contents .price-bold {font-weight:bold;margin:10px 0 0;}
+#itemtype .itemform .price {font-weight:bold; margin:10px 0;}
+#itemtype .itemform .price-bold {font-weight:bold; margin:10px 0;}
+	#itemtype .itemform .sale-price, #itemtype .itemform .sale-price-bold {margin:10px 0;}
+	#itemtype .itemform .sale-price-bold {font-weight:bold}
+	#itemtype .itemform .sale-price-bold em {background:#ffffff; color:#000000; font-style:normal; font-weight:bold; margin:10px 0; padding:0 4px 0 0;}
+	#itemtype .itemform .sale-price em {color:#000000; font-style:normal; margin:10px 0; padding:0 4px 0 0;}
+
+
+#contents-table .availability{padding:10px 0}
+
+
+#itemtype .code {font-style:normal; margin:10px 0;}
+#itemtype .code em {font-style:normal; margin:10px 0;}
+#contents-table .contentsOptions {padding:3px 0;}
+#contents-table #abstract {padding:3px 0;}
+#itemtype .itemFormName, #contents-table .itemFormName{font-weight:bold;}
+#contents-table .itemFormNameMultiLine{display:block;}
+#itemtype .itemavailable {color:#000000; font-weight:bold; margin:8px 0;}
+#itemtype .itemavailable em {color:#000000; font-style:normal; font-weight:bold; margin:8px 0 8px 4px;}
+#itemtype .itemoption {display:inline; font-weight:bold; margin:2px 0;}
+#itemtype .multiLineOption {display:block; margin:5px 0; font-weight:normal;}
+.contenttitle-center{text-align:center}
+form{padding:0;margin:0}

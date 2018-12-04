@@ -1,0 +1,153 @@
+/* CSS Document */
+/* 092506 0.02*/
+/*Note to Merchants: If you wish to make edits to your CSS, we suggest you make them in the css-edits stylesheet or another css file that you create and reference in your template. By doing so you will ensure that you are not introducing errors into the main stylesheets, which you could not recover if you edited them directly. This also allows Yahoo! to potentilly release fixes (if necessary) by you copying in the newlt revised files without overwriting any of your subsequent edits.*/
+
+/*
+
+/* Elements */
+a{color:#000000}
+a:visited{/*color:#000000*/}
+* {padding:0; /*margin:0;*/}
+td {font-size: 11px ; color:#000000; padding:0; margin:0;}
+h1, h2, h3{margin:0;}
+body {background-color: #383933; background-image:url('http://lib.store.yahoo.net/lib/yhst-18656478439615/stripe.png') ; background-repeat:repeat; font:normal 11px Verdana, Tahoma, Helvetica, sans-serif; text-align:center; width:100%;margin:0;color:#000000; }
+
+/* Classes */
+.boxclose {zoom:1;}
+.breadcrumbs{margin:10px;}
+.clear {clear:both; display:block; font-size:1px; height:1px; line-height:-1;}
+.last {border:0 solid;}
+  /* Form Buttons */
+
+.ys_primary{ background:#94b900;color:#ffffff;font:bold 11px Arial,verdana,sans-serif;padding:1px 5px;text-align:center;cursor:pointer; display:block; margin-top:10px;}
+/*input.ys_primary{ background:#66A5FF;color:#FFF;font:bold 11px Arial,verdana,sans-serif;padding:1px 5px;text-align:center;cursor:pointer; }*/
+/*input.add2cartsubmit {background-color:#888; border-color:#DDD #AAA #555; border-style:solid; border-width:1px 1px 1px; color:#fff; font-weight:bold; outline:#000 solid 1px; padding:0 2px;}*/
+label.add2cartlabel {border:1px solid #000;}
+/*input.buttonsubmit {background-color:#888; border-color:#DDD #AAA #555; border-style:solid; border-width:1px 1px 1px; color:#fff; font-size:0.8em font-weight:bold; outline:#000 solid 1px; padding:0 2px; text-transform:uppercase;}*/
+/*label.buttonlabel {border:1px solid #000;}*/
+.buttonlabel {margin-left:4px}
+
+/* IDs */
+#info-div{
+	background-color:#FFFFFF;
+	padding:0px;
+	zoom:1;
+}
+#info-div:after{clear:both; content:"."; display:block; height:0; visibility:hidden;}
+#accessorytitle {}
+	#itemtype #accessorytitle {background:none; color:#94b900; font:bold 14px Tahoma, Geneva, Verdana, sans-serif; padding:2px 10px 8px;}
+
+#bodycontent {float:right; width:610px;} /* 150 + 610 = 760 */ /* The Min-width is needed for Moz to stretch the bodycontent that is shrinkwrapping content due to floats. This is only necessary on pages without Tables in the contents. Min-width breaks Opera's layout so Width:100% is used instead of Min-width. */
+
+#bodyshell {background-color:#87877d; border-left:150px solid #383933; float:left; zoom:1; margin:0;} /*Left Column Color*/ /* Background color is needed to counter an IE rendering bug that erases the left column bgcolor */ /* float:left is needed in Moz to handle extra wide cntent that breaks the width */ /* Left/Right Margin was removed due to expanded content errors in Moz, this was used to push the nav/content area in to match the mock-up */
+
+*:first-child+html #bodyshell { width:610px; }
+
+#bodyshell:after {clear:both; content:"."; display:block; height:0; visibility:hidden;}
+
+#brandmark {float:left; font:normal 30px Tahoma, Geneva, Verdana, sans-serif; width:500px; padding-bottom:2px;} /* 510 + 250 = 760 */
+
+#brandmark a {color:#ffffff; display:block; padding:0 0 5px 0px; text-decoration:none;}
+
+#caption {zoom:1;}
+#caption:after {clear:both; content:"."; display:block; height:0; visibility:hidden;}
+#contentarea #caption {margin:10px;}
+#itemtype #caption {/*padding:0 10px;*/}
+#maintype #caption {background-color:#fff; padding:15px;}
+
+#captionarea, #messagearea, #info-div {margin:10px 10px 9px; /*border-bottom:1px #fff solid;*/} /* 1px is used to prevent Margin Folding */
+
+#messagearea #messagetitle{background:#ffffff url('') ; color:#ffffff; font:bold 14px Tahoma, Geneva, Verdana, sans-serif; padding:4px 15px 6px;}
+#itemtype #contentarea #itempage-captiontitle {margin:15px 0 10px; padding:0 2px;}
+#itemtype #itempage-captiontitle {background:none; color:#dfdfdf; font:bold 14px Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:2px 2px 8px;} /*The Left/Right Padding is smaller because the Caption Title needs to be nested within the Caption on Item pages, but not on Section pages */
+
+#container {margin:0 auto; text-align:left; width:760px; border:solid 1px #94b900; background-color: #87877d;} /* This "container" is needed as IE produces resize induced rendering errors when using the BODY element for a container. */ 
+
+#contentarea {margin:0 0 10px 0;}
+
+#section-contenttitle {background-color:#94b900; color:#ffffff; font:bold 14px ; margin:0 10px; padding:4px 15px 6px;}
+
+#bodyContent #info-div #searchpageHeader {background-color:#94b900; color:#ffffff; font:bold 14px ; margin:0; padding:4px 15px 6px;}
+
+#item-contenttitle {background-color:#94b900; color:#ffffff; font:bold 14px ; margin:0 15px; padding:4px 15px 6px;}
+
+#specialstitle {background:#94b900 url('') ; color:#ffffff; font:bold 14px Tahoma, Geneva, Verdana, sans-serif; margin:0 10px; padding:4px 15px 6px;}
+
+#copyright {color:#a2a2a2; display:block; font:normal xx-small/1.2 verdana, sans-serif; padding:0 15px 15px; text-align:right;}
+
+#finaltext, #introtext {margin:10px;}
+
+#footer {background:#383933 url('') ; clear:both;zoom:1;}
+#footer-links {color:#6e6e64; display:block; font-weight:bold; font-size:11px; padding:10px 0 15px; text-align:center;}
+#footer-links a {color:#6e6e64; text-decoration:none; text-transform:uppercase;}
+#footer-links a:hover {color:#94b900; text-decoration:underline;}
+
+#header {background:#6e6e64 url('') ;zoom:1; min-height:24px; height:auto !important; height:75px;} /* _height and zoom are MS hacks */
+#header:after {clear:both; content:"."; display:block; height:0; visibility:hidden;}
+
+/* Search Page Styles */
+#info-div form, 
+     .infoText div {margin:0 10px;}
+#info-div form table td a img {margin-right:5px;}
+#info-div form table td b {display:block; padding:15px 0 5px;}
+#info-div form table td font {font-size:1em;}
+/* !Search Page Styles */
+
+#introtext {} /* REF: #finaltext */
+	
+
+#itemarea {background-color:#fff; margin:0px 15px 0; padding:10px; zoom:1;}
+#itemarea:after {clear:both; content:"."; display:block; height:0; visibility:hidden;}
+
+#nav-general {clear:both; float:right; display:block; list-style:none; margin:0px 0px 0px 0;}
+
+#nav-general li {background-color:#6e6e64; border:1px solid #6e6e64; border-top:0; float:left; margin:0 2px;} /* General Link Colors */
+
+#nav-general li a {color:#b8e600; display:block; font-size:9px; font-weight:bold; padding:4px 20px 6px; text-align:center; text-decoration:none; white-space:nowrap;}
+
+#nav-general li a:hover {background-color:#383933; color:#94b900;}
+
+#nav-general a.linkcheckout {background:transparent url('') 90% 0 no-repeat; padding-right:35px;}	
+
+#nav-product {_display:inline; float:left; margin-left:-150px; overflow:hidden; position:relative; width:150px; z-index:100;} /* IE Experiences the pixel doubling bug here. "display: inline;" fixes this. Position Relative and Z-Index are needed for IE in order to display the background colors */
+
+#nav-product ul li a {border-bottom:1px solid #b4bbab; color:#ffffff; display:block; font-weight:bold; font-size:12px; height:18px; margin:0; min-height:12px; padding:10px 4px 6px 13px; text-decoration:none;width:133px;}
+
+html>body #nav-product a {height:auto;}
+
+#nav-product ul li a:hover {background-color:#6e6e64; color:#94b900;}
+
+#nav-product li {margin:0;}
+
+#nav-product ul {list-style:none;}
+
+ * html #nav-product ul li a {  /* make hover effect work in IE */
+	width: 150px;
+}
+#htmltop, #htmlbottom, #htmltop a, #htmlbottom a{padding:0px;color:#ffffff}
+
+#nav-product ul li a{width:133px; background-color: #383933;}
+
+* html #nav-product ul li a{width:133px; height:100%; overflow:hidden; background-color: #383933; overflow:hidden;}
+
+* html #nav-product { overflow:visible; width:150px; }
+
+#searcharea {background:#6e6e64 url('') ; display:block; margin:0 0 0;}
+#searcharea input {font-size:1.0em;}
+#searcharea fieldset {border:0 solid; display:block; padding:10px 0 10px 13px;}
+#searcharea label {color:#b8e600; font-size:0.85em; font-weight:bold; text-transform:uppercase;}
+#searcharea label span, #searcharea label input {vertical-align:middle}
+#searchsubmit{ background:#383933 url('') ;color:#6e6e64;font:bold 11px Arial,verdana,sans-serif;padding:1px 5px;text-align:center;cursor:pointer;display:inline; margin:0;}
+#searchpageHeader {background-color:#94b900; color:#ffffff; font:bold 14px ; margin:0; padding:4px 15px 6px;}
+input#query {margin-left:4px;}
+#query {padding:2px}
+
+#slogan {color:#fefefe; display:block; float:right; font:normal 11px Tahoma, Geneva, Verdana, sans-serif; padding:2.7em 15px 10px 10px; width:225px; text-align:right;} /* 225 + 25= 250 */
+
+*:first-child+html #info-div,
+*:first-child+html #specialtitle,
+*:first-child+html #messagearea { width:590px; } *:first-child+html #itemarea { width:570px; }
+
+#badge { margin: 15px auto; }
+
+* html #badge { width:136px; text-align:center; }
